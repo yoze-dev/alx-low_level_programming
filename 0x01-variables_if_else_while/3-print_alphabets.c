@@ -21,7 +21,7 @@ int main(void)
 		putchar(upperCaseLetters);
 		upperCaseLetters++;
 	}
-	pubchar("\n");
+	putchar('\n');
 
 	return (0);
 }
