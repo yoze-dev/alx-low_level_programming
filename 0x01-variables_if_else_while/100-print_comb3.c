@@ -13,11 +13,11 @@ int main(void)
 	while (tensPlace < 57)
 	{
 		onesPlace = tensPlace + 1;
-		while(onesPlace <= 57)
+		while (onesPlace <= 57)
 		{
 			putchar((char)tensPlace);
 			putchar((char)onesPlace);
-			if(tensPlace == 56 && onesPlace == 57)
+			if (tensPlace == 56 && onesPlace == 57)
 				break;
 			putchar(',');
 			putchar(' ');
