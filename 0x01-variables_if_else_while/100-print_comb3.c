@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-	char tensPlace = '0';
-	char onesPlace;
+	int tensPlace = 48;
+	int onesPlace;
 
-	while (tensPlace < '9')
+	while (tensPlace < 57)
 	{
-		onesPlace = (int)tensPlace + 1;
-		while(onesPlace <= '9')
+		onesPlace = tensPlace + 1;
+		while(onesPlace <= 57)
 		{
-			putchar(tensPlace);
-			putchar(onesPlace);
-			if(tensPlace == '8' && onesPlace == '9')
+			putchar((char)tensPlace);
+			putchar((char)onesPlace);
+			if(tensPlace == 56 && onesPlace == 57)
 				break;
 			putchar(',');
 			putchar(' ');
