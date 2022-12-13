@@ -11,10 +11,16 @@ void jack_bauer(void)
 	char ones_min;
 	char tens_sec;
 	char ones_sec;
+	char value;
 
-	for (tens_min = '0'; tens_min <= '5'; tens_min++)
+	for (tens_min = '0'; tens_min <= '2'; tens_min++)
 	{
-		for (ones_min = '0'; ones_min <= '9'; ones_min++)
+		if (tens_min == '2')
+			value = '3';
+		else
+			value = '9';
+
+		for (ones_min = '0'; ones_min <= value; ones_min++)
 		{
 			for (tens_sec = '0'; tens_sec <= '5'; tens_sec++)
 			{

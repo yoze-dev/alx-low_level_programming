@@ -7,9 +7,11 @@
  */
 void times_table(void)
 {
-	for (int i = 0; i <= 9; i++)
+	int i;
+	int k;
+	for (i = 0; i <= 9; i++)
 	{
-		for (int k = 0; k <= 9; k++)
+		for (k = 0; k <= 9; k++)
 		{
 			_putchar(i * k);
 			if (k != 9)
